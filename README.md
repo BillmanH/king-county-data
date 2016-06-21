@@ -1,5 +1,6 @@
 # king_county_data
 API services and Ipython notebooks to get and analyze data from http://info.kingcounty.gov/
+Data is from King County's current web posting.
 
 # Look through housing prices in King County;
 You can search through the map here:
