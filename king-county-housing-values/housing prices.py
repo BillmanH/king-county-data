@@ -6,6 +6,8 @@ import urllib
 from bs4 import BeautifulSoup as bs
 import yaml
 import requests
+import os
+
 
 # %%
 # Loading the config file
@@ -13,7 +15,7 @@ params = yaml.safe_load(open('config.yaml'))
 
 
 # %%
-with open(params['parcel_numbers']) as f:
+with open(os.path('data',params['parcel_numbers']) as f:
     lines = f.read().splitlines()
 
 URL_ParcelNumberQuery = r"https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx?ParcelNbr={}"
